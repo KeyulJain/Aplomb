@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" href="logincss/login.css">
+
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="form-header"><h1>Login</h1></div>
+			<form action="/users/login" method="post" id="login" class="input-group">
+				<input name="username" id="username" type="text" class="input-field" placeholder="Username" required>
+				<input name="password" id="password" type="password" class="input-field" placeholder="Password" required>
+				<a href="/"> <button type="submit"  class="submit-btn">Log in</button> </a>
+			</form>
+			<section>
+				<!-- <div class="footer-text">or sign up using</div> -->
+				<div class="signup-link"><a href="/signuppage" class="btn btn-general btn-gradient">Sign Up</a>
+			</section> 
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+.journal{
+    background: #5C9320;
+    border-radius: 10px;
+}
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: 800;
+}
+.p-2{
+    padding: 2rem;
+}
+.form-group textarea {
+    padding: .5rem;
+    width: 100%;
+    border-radius: 10px;
+    background: #f1faee;
+}
+.text-center{
+    text-align: center;
+}

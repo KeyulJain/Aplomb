@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Journaling</title>
+    <link rel="stylesheet" href="journalling2css/journaling.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="journalling2css/font-awesome/css/font-awesome.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="journalling2css/bootstrap/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="journalling2css/style.css">
+    
+</head>
+<body>
+    <section id="journaling">
+        <div id="about-01">
+           
+                <div class="container">
+                
+                        {{#each notes}}
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <h3>Journal Entry</h3>
+                                <hr>
+                                <p>{{this.content}}</p>
+                                <p>{{this.createdAt}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,330 @@
+/**
+ * style.css
+ * Contains CSS for basic static website named "White Graphics"
+ */
+
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Raleway & Montserrat
+    ----------------------------------------
+    Colors:
+        Moon green:          #5c9320
+        Grey:                #212226
+        Blue:                #00596A
+        White Smoke:         #f4f4f4
+        White:               #fff
+        Black:               #000   
+============================================ */
+/**********************************************************************************
+********************************* GLOBAL ******************************************
+***********************************************************************************/
+
+
+/*
+#journaling:before{
+    content:'';
+    background: url('../image/imagejournal4.jpeg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+     min-height: 40vh;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: var(--max-width);
+/*    margin: 50px 50px 0  0;*/
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.articles-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+ .articles-container .card-grid{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+     justify-content: center;
+}
+
+.card{
+    max-height:300px;
+    max-width: 500px;
+    margin-top: 50px;
+    background: #FFF;
+    padding: 2rem;
+    margin-right: 0px
+    box-shadow: 2px 2px 2px 1px rgba(0.2, 0.2, 0.2, 0.4);
+    border: 3px solid #5C9320;
+    border-radius: 20px;
+     background:#FFF;
+
+}
+.card:hover{
+    background:#5C9320;
+    color: black;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+.card:hover .heading{
+    color: white;
+}
+.card:hover strong{
+    color: white;
+}
+.card2:hover strong{
+    color: white;
+}
+
+.card:hover img{
+    border:  7px solid white;
+}
+
+.card:hover img2{
+    border:  7px solid white;
+}
+
+.card:hover .category2{
+    color: white;
+}
+
+.card:hover hr{
+    background: #FFF; 
+}
+.img-size{
+    max-height: 250px;
+    max-width: 200px;
+    align-content: center;
+    margin-left: 50px;
+}
+img{
+   border:  7px solid #555;
+}
+
+
+
+
+.category{
+/*    min-height: 300px;*/
+    display: inline-block;
+    color: #000;
+    font-size: .55rem;
+    padding: .4rem .6rem;
+    border-radius: 15px;
+    margin-bottom: .5rem;
+    
+}
+
+
+ hr {
+    width: 350px;
+    height: 3px;
+    background: #5C9320;
+    margin: 0 auto;
+    border: none;
+}
+.heading{
+    color: #5C9320;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 60px;
+}
+::selection {
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-style: inset 0 0 6px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, .3);
+}
+
+#message .placeholder{
+    margin-right: 10px;
+}
+strong{
+    color: #5C9320; 
+}
+h3{
+    color: black;
+   font-size: 25px;
+    margin-top: 2.5x;
+    margin-bottom: 0px;
+    margin-left: 60px;  
+}
+i{
+    font-size: 20px;
+    color: #5C9320;
+    text-decoration: none;
+}
+.icon{
+    margin-left: 300px;
+    font-size: 8em;
+}
+.icon3{
+    font-size: 5em;
+    margin-left:140px;
+   margin-top: 0px;
+}
+.icon4{
+    font-size: 5em;
+    margin-left:140px;
+   margin-top: 30px;
+}
+.icon5{
+    font-size: 5em;
+    margin-left:140px;
+   margin-top: 100px;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.card2{
+    min-height: 200px;
+    max-width: 500px;
+    background: #FFF;
+    padding: 2rem;
+    margin-right: 0px
+    box-shadow: 2px 2px 2px 1px rgba(0.2, 0.2, 0.2, 0.4);
+    border: 3px solid #5C9320;
+    border-radius: 20px;
+     background:#FFF;
+    text-align: center;
+
+}
+.card2 .heading{
+    margin-left: 0px;
+}
+.card2:hover{
+    background:#5C9320;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all .4s ease-in-out;
+    color: white;
+}
+.icon2{
+    margin-left: 150px;
+    font-size: 8em;
+}
+
+.tcore {
+ border:1.5px solid black;
+ padding: 0.3rem; 
+}
+table tr th{
+ border:1.5px solid black;
+ padding: 0.5rem;
+}
+tr,th{
+ border:1.5px solid black;
+}
+
+th{
+    font-weight: normal;
+}
+table{margin-top:1rem; }
+
+
+.card2:hover i{
+    color: #FFF; 
+}
+
+.card:hover textarea{
+    color: black;
+}
+
+.card2 th>textarea{
+    margin-left:5px;
+}
+
+.top{
+    margin-left: 10px;
+}
+.card2:hover textarea{
+    color: black;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.first{
+    margin: 40px;
+    
+}
+
+#section2{
+    margin-top:5em;
+}
+textarea{
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+#worrying::before {
+    content:'';
+    background: url('../cbtpage6image/dssv.jpeg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+    min-height: 230rem;
+    z-index: -1;
+
+}
+#answer {
+    z-index: 999;
+}

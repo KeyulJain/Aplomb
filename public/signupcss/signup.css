@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.hero{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+	background-image: url(../signupimage/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.form-box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+.form-header{
+	position: relative;
+	width: 220px;
+	margin: 35px auto;
+	font-size: 20px;
+	text-align: center;
+	color: #5C9320;
+	font-family: sans-serif;
+}
+section{
+	top: 280px;
+	width: 220px;
+	position: relative;
+	margin: 35px auto;
+	font-size: 18px;
+	text-align: center;
+	color: #777;
+	font-family: sans-serif;
+}
+.input-group{
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition: 0.5s;
+}
+.input-field{
+	width:  100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 20px;
+	color: white;
+	font-size: 15px;
+	background: linear-gradient(to right, #5C9320 0%, #63C600 51%, #5C9320 100%);
+	border: 0;
+	outline: none;
+	border-radius: 30px; 
+}
+a{
+	color: #5C9320;
+	text-decoration: none;
+}
+#register{
+	left: 50px;
+}
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 12px 46px;
+    transition: all .5s;
+}
+.btn-green {
+    color: #FFF;
+    background: #5C9320;
+}
+
+.btn-white {
+    color: #212226;
+    background: #FFF;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-green:hover,
+.btn-green:focus {
+    color: #FFF;
+    background: #212226;
+}
+
+.btn-general.btn-gradient {
+    color: #FFF;
+    background-size: 200%;
+    background-image: linear-gradient(to right, #5C9320 0%, #63C600 51%, #5C9320 100%);
+}
+.btn-general.btn-gradient:hover {
+    background-position: right;
+}
